@@ -375,6 +375,38 @@
                 object-fit: cover !important;
                 display: block !important;
             }
+            .offer-arrow {
+                width: 2.15rem;
+                height: 3.3rem;
+                flex: 0 0 2.15rem;
+                position: relative;
+                display: inline-block;
+            }
+            .offer-arrow::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                width: 0.62rem;
+                height: 2.1rem;
+                background: #dc2626;
+            }
+            .offer-arrow::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border-left: 1rem solid transparent;
+                border-right: 1rem solid transparent;
+                border-top: 1.15rem solid #dc2626;
+            }
+            .upsell-nudge-text {
+                font-size: 1rem !important;
+            }
             body {
                 background: #f1f2f4 !important;
                 font-family: 'Montserrat', Arial, sans-serif !important;
@@ -502,29 +534,72 @@
             }
             @media (max-width: 640px) {
                 .soldagem-carousel-item {
-                    width: min(88vw, 21rem) !important;
-                    flex-basis: min(88vw, 21rem) !important;
+                    width: min(92vw, 23rem) !important;
+                    flex: 0 0 min(92vw, 23rem) !important;
                 }
                 .soldagem-carousel-frame {
-                    height: 14rem !important;
+                    height: 15.25rem !important;
                 }
                 .soldagem-carousel-img {
-                    height: 14rem !important;
-                    max-height: 14rem !important;
+                    height: 15.25rem !important;
+                    max-height: 15.25rem !important;
+                }
+                #extra-reference-carousel {
+                    padding-top: 1.5rem !important;
+                }
+                #extra-reference-carousel > div:nth-child(2) {
+                    gap: 0.25rem !important;
+                    row-gap: 0.25rem !important;
+                }
+                #extra-reference-carousel .relative.w-full.overflow-hidden {
+                    margin-top: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+                #extra-reference-carousel .model-carousel {
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                }
+                #extra-reference-carousel .mt-10,
+                #extra-reference-carousel .sm\:mt-14 {
+                    margin-top: 1.25rem !important;
                 }
                 .soldagem-static-map {
                     width: min(96vw, 28rem) !important;
                     max-width: 28rem !important;
                 }
                 .soldagem-benefit-carousel-item {
-                    width: min(88vw, 20rem) !important;
-                    flex-basis: min(88vw, 20rem) !important;
+                    width: min(82vw, 17.5rem) !important;
+                    flex: 0 0 min(82vw, 17.5rem) !important;
+                }
+                .soldagem-benefit-carousel-frame {
+                    aspect-ratio: 16 / 9 !important;
+                }
+                .upsell-nudge-title {
+                    font-size: 0.76rem !important;
+                }
+                .upsell-nudge-text {
+                    font-size: 0.78rem !important;
+                    line-height: 1.18 !important;
+                }
+                .offer-arrow {
+                    width: 1.35rem !important;
+                    height: 2.25rem !important;
+                    flex-basis: 1.35rem !important;
+                }
+                .offer-arrow::before {
+                    width: 0.4rem !important;
+                    height: 1.45rem !important;
+                }
+                .offer-arrow::after {
+                    border-left-width: 0.68rem !important;
+                    border-right-width: 0.68rem !important;
+                    border-top-width: 0.82rem !important;
                 }
             }
             #extra-reference-carousel { padding-bottom: 0 !important; }
         #extra-reference-carousel .model-carousel { padding-bottom: 0 !important; }
     </style>
-    <script src="soldagem-template.js?v=bloco-urgencia-vermelho-1" defer></script>
+    <script src="soldagem-template.js?v=setas-css-mobile-1" defer></script>
 </head>
 <body style="background:#f6f9ff;" class="text-zinc-900 antialiased selection:bg-lime-500 selection:text-zinc-900 pb-0 overflow-x-hidden">
 <div class="bg-[#ef5b4d] text-white text-center py-2 px-2 sm:px-4 text-[11px] sm:text-sm font-bold text-balance">
