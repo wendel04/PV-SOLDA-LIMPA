@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Mapa Visual da Soldagem Industrial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/site-critical.css">
+    <script src="https://tailwindcss.shop/css/tailwind-core.min.js?v=48BDhHxu" defer></script>
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <script>
+        window.pixelId = "6a486fc941f82fdab8ac8f30";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-subids
+        async
+        defer
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        section,
+        footer {
+            max-width: 100%;
+            overflow-x: clip;
+        }
+        p,
+        li,
+        details summary + div {
+            font-weight: 600 !important;
+        }
+        h1, h2, h3, h4, h5, h6,
+        a,
+        button,
+        summary,
+        strong,
+        b,
+        .price-text,
+        .keep-bold {
+            font-weight: 800 !important;
+        }
+        h1,
+        h2,
+        .price-text {
+            font-weight: 900 !important;
+            letter-spacing: -0.035em;
+        }
+        h3,
+        h4,
+        summary,
+        a,
+        button {
+            letter-spacing: -0.02em;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary .faq-icon { transform: rotate(180deg); }
+        .mockup-card {
+            background: transparent;
+            border: 0 !important;
+            box-shadow: none !important;
+        }
+        .real-mockup-img {
+            max-height: 124%;
+            width: 124%;
+            object-fit: contain;
+            filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.16));
+        }
+        .hero-mockup-wrap {
+            margin-top: 0.35rem !important;
+            margin-bottom: 5rem !important;
+        }
+        .hero-bullets > div {
+            font-weight: 600 !important;
+        }
+        .ideal-card {
+            background: #ecfff4;
+            border: 1.5px solid #71e39c;
+            box-shadow: 0 8px 20px rgba(0, 150, 70, 0.10);
+            min-height: 150px;
+        }
+        @keyframes arrowDownPulse {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(7px); }
+        }
+        .animated-down-arrow {
+            animation: arrowDownPulse 1s ease-in-out infinite;
+        }
+        .carousel-img {
+            width: 100%;
+            height: 24rem;
+            object-fit: contain;
+        }
+        .model-carousel {
+            pointer-events: none;
+            user-select: none;
+        }
+        .custom-check { width: 3rem; height: 3rem; flex: 0 0 3rem; object-fit: contain; display: block; }
+        .photo-slot { width:100%; height:100%; min-height:12rem; border:2px dashed rgba(37,99,235,.38); border-radius:1.25rem; background:rgba(255,255,255,.55); }
+        .carousel-img.photo-slot { height:24rem; }
+        .mockup-slot { width:min(100%,34rem); height:min(100%,28rem); min-height:18rem; border:2px dashed rgba(37,99,235,.38); border-radius:1.5rem; background:rgba(255,255,255,.55); box-shadow:0 22px 34px rgba(0,0,0,.08); }
+        @media (max-width: 1024px) {
+            body { font-size: 14px; }
+
+            section {
+                padding-top: 2.5rem !important;
+                padding-bottom: 2.5rem !important;
+            }
+
+            h1 {
+                font-size: 1.82rem !important;
+                line-height: 1.12 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            h2 {
+                font-size: 1.42rem !important;
+                line-height: 1.18 !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            h3 {
+                font-size: 1.05rem !important;
+                line-height: 1.25 !important;
+            }
+
+            p,
+            li {
+                line-height: 1.45 !important;
+            }
+
+            .aspect-video {
+                aspect-ratio: auto !important;
+                height: auto !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .hero-mockup-wrap {
+                margin-top: 0.75rem !important;
+                margin-bottom: 5.25rem !important;
+            }
+
+            .mockup-card {
+                min-height: 0 !important;
+                border-radius: 1.25rem !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+            }
+
+            .mockup-card .rounded-3xl,
+            .rounded-\[2rem\] {
+                border-radius: 1.1rem !important;
+            }
+
+            .mockup-card .text-2xl,
+            .mockup-card .text-3xl {
+                font-size: 1.25rem !important;
+            }
+
+            .mockup-card .text-6xl {
+                font-size: 2.5rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .mockup-card .w-20,
+            .mockup-card .h-20 {
+                width: 3.4rem !important;
+                height: 3.4rem !important;
+                font-size: 1.7rem !important;
+                margin-bottom: 0.8rem !important;
+            }
+
+            .model-carousel {
+                gap: 1rem !important;
+                padding-left: 0.25rem !important;
+                padding-right: 0.25rem !important;
+            }
+
+            .model-carousel > div {
+                width: min(86vw, 19rem) !important;
+            }
+
+            .model-carousel > div > div {
+                height: 27rem !important;
+                padding: 0 !important;
+                border-radius: 0 !important;
+                background: transparent !important;
+                border: 0 !important;
+                box-shadow: none !important;
+            }
+
+            .carousel-img {
+                height: 27rem !important;
+            }
+
+            .real-mockup-img {
+                max-height: 25rem !important;
+                width: 132% !important;
+            }
+
+            .model-carousel .text-5xl {
+                font-size: 2rem !important;
+            }
+
+            .model-carousel h3 {
+                font-size: 1.05rem !important;
+            }
+
+            .model-carousel p {
+                font-size: 0.7rem !important;
+            }
+
+            .grid {
+                gap: 0.85rem !important;
+            }
+
+            .ideal-card {
+                min-height: 132px !important;
+                width: 100%;
+            }
+
+            .p-4 {
+                padding: 0.85rem !important;
+            }
+
+            .p-5,
+            .p-6,
+            .p-8,
+            .p-10 {
+                padding: 1rem !important;
+            }
+
+            .mb-6,
+            .mb-8,
+            .mb-10,
+            .mb-12,
+            .mb-16 {
+                margin-bottom: 1.25rem !important;
+            }
+
+            .mt-10,
+            .mt-12,
+            .mt-14,
+            .mt-16 {
+                margin-top: 1.5rem !important;
+            }
+
+            .min-h-\[420px\] {
+                min-height: 250px !important;
+            }
+
+            .h-44 {
+                height: 13rem !important;
+            }
+
+            .h-48 {
+                height: auto !important;
+                min-height: 8.5rem !important;
+            }
+
+            .text-4xl,
+            .text-\[46px\],
+            .text-\[52px\] {
+                font-size: 1.8rem !important;
+            }
+
+            .text-3xl {
+                font-size: 1.45rem !important;
+            }
+
+            a.rounded-lg {
+                padding-top: 0.9rem !important;
+                padding-bottom: 0.9rem !important;
+                font-size: 0.82rem !important;
+            }
+
+            details summary {
+                padding: 1rem !important;
+                font-size: 0.85rem !important;
+            }
+
+            details summary + div {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                padding-bottom: 1rem !important;
+            }
+
+            #sales-notification {
+                top: 0.75rem !important;
+                left: 0.75rem !important;
+                width: 15.5rem !important;
+            }
+        }
+            .asset-placeholder {
+                width: 100%;
+                min-height: 100%;
+                border: 2px dashed rgba(37, 99, 235, 0.45);
+                border-radius: 16px;
+                background: linear-gradient(135deg, rgba(255,255,255,0.65), rgba(219,234,254,0.85));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #1d4ed8;
+                font-weight: 900;
+                text-align: center;
+                padding: 1rem;
+                box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45);
+            }
+            .asset-placeholder.dark {
+                border-color: rgba(163, 230, 53, 0.5);
+                background: linear-gradient(135deg, rgba(15,47,115,0.22), rgba(255,255,255,0.78));
+                color: #0f2f73;
+            }
+            .placeholder-tall { height: 21rem; }
+            .placeholder-map { height: 27rem; }
+            .placeholder-hero { min-height: 18rem; }
+            .placeholder-bonus { height: 100%; min-height: 16rem; }
+            .soldagem-carousel-img {
+                height: 19rem !important;
+                max-height: 19rem !important;
+                width: 100% !important;
+                object-fit: contain !important;
+            }
+            #auto-carousel-top,
+            #auto-carousel-bottom {
+                gap: 0 !important;
+            }
+            .model-carousel > .soldagem-carousel-item {
+                width: min(92vw, 30rem) !important;
+                flex: 0 0 min(92vw, 30rem) !important;
+            }
+            .soldagem-carousel-frame {
+                height: 19rem !important;
+            }
+            .soldagem-static-map {
+                width: min(100%, 44rem) !important;
+                max-width: 44rem !important;
+            }
+            .soldagem-benefit-carousel-item {
+                width: min(88vw, 28rem) !important;
+                flex: 0 0 min(88vw, 28rem) !important;
+            }
+            .soldagem-benefit-carousel-frame {
+                width: 100% !important;
+                aspect-ratio: 16 / 9 !important;
+                overflow: hidden !important;
+                border-radius: 0.85rem !important;
+                box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18) !important;
+                background: #0f172a !important;
+            }
+            .soldagem-benefit-carousel-img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                display: block !important;
+            }
+            body {
+                background: #f1f2f4 !important;
+                font-family: 'Montserrat', Arial, sans-serif !important;
+                font-weight: 600 !important;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            strong,
+            a,
+            button,
+            summary,
+            .font-bold,
+            .font-black,
+            .keep-bold,
+            .price-text {
+                font-family: 'Montserrat', Arial, sans-serif !important;
+            }
+            h1,
+            h2,
+            h3,
+            h4 {
+                text-transform: uppercase !important;
+            }
+            h1,
+            h2,
+            .font-black {
+                font-weight: 900 !important;
+            }
+            h3,
+            h4,
+            .font-bold,
+            .keep-bold,
+            .price-text,
+            a,
+            button,
+            summary {
+                font-weight: 800 !important;
+            }
+            p,
+            li,
+            span,
+            div {
+                font-family: 'Montserrat', Arial, sans-serif !important;
+            }
+            body > section:nth-of-type(1),
+            body > section:nth-of-type(3),
+            body > section:nth-of-type(6),
+            body > section:nth-of-type(8),
+            body > section:nth-of-type(10),
+            body > footer {
+                background: linear-gradient(180deg, #2b1710 0%, #3b2419 58%, #24120c 100%) !important;
+                border-color: rgba(255,255,255,0.08) !important;
+            }
+            body > section:nth-of-type(2),
+            body > section:nth-of-type(5),
+            body > section:nth-of-type(7),
+            body > section:nth-of-type(9),
+            body > section:nth-of-type(11) {
+                background: #f1f2f4 !important;
+                border-color: rgba(43,23,16,0.08) !important;
+            }
+            body > section:nth-of-type(4) {
+                background: #d71920 !important;
+            }
+            body > section:nth-of-type(4) h2,
+            body > section:nth-of-type(4) p,
+            body > section:nth-of-type(4) span {
+                color: #ffffff !important;
+            }
+            body > section:nth-of-type(4) .inline-flex {
+                background: rgba(255,255,255,0.18) !important;
+                border-color: rgba(255,255,255,0.58) !important;
+                color: #ffffff !important;
+            }
+            body > section:nth-of-type(4) .inline-flex span {
+                color: #ffffff !important;
+            }
+            body > section:nth-of-type(1) h1,
+            body > section:nth-of-type(3) h2,
+            body > section:nth-of-type(6) h2,
+            body > section:nth-of-type(8) h2,
+            body > section:nth-of-type(10) h2,
+            body > section:nth-of-type(10) h4,
+            body > footer h4 {
+                color: #fff7ed !important;
+            }
+            body > section:nth-of-type(1) h1 span,
+            body > section:nth-of-type(6) h2,
+            body > section:nth-of-type(8) h2,
+            body > section:nth-of-type(10) h2 {
+                color: #fff7ed !important;
+            }
+            body > section:nth-of-type(1) p,
+            body > section:nth-of-type(10) p,
+            body > footer p,
+            body > footer span {
+                color: rgba(255,247,237,0.82) !important;
+            }
+            body > section:nth-of-type(2) h2,
+            body > section:nth-of-type(5) h2,
+            body > section:nth-of-type(7) h2,
+            body > section:nth-of-type(9) h2,
+            body > section:nth-of-type(11) h2 {
+                color: #211712 !important;
+            }
+            body > section:nth-of-type(2) [class*="from-[#f6f9ff]"],
+            body > section:nth-of-type(2) [class*="to-transparent"] {
+                opacity: 0.95 !important;
+            }
+            body > section:nth-of-type(3) [class*="from-[#7dd3fc]"] {
+                background: transparent !important;
+            }
+            body > section:nth-of-type(3) [class*="to-transparent"] {
+                background: transparent !important;
+            }
+            .bg-blue-50,
+            .ideal-card {
+                background-color: #ffffff !important;
+            }
+            .border-blue-100,
+            .border-zinc-200 {
+                border-color: rgba(43,23,16,0.12) !important;
+            }
+            @media (max-width: 640px) {
+                .soldagem-carousel-item {
+                    width: min(88vw, 21rem) !important;
+                    flex-basis: min(88vw, 21rem) !important;
+                }
+                .soldagem-carousel-frame {
+                    height: 14rem !important;
+                }
+                .soldagem-carousel-img {
+                    height: 14rem !important;
+                    max-height: 14rem !important;
+                }
+                .soldagem-static-map {
+                    width: min(96vw, 28rem) !important;
+                    max-width: 28rem !important;
+                }
+                .soldagem-benefit-carousel-item {
+                    width: min(88vw, 20rem) !important;
+                    flex-basis: min(88vw, 20rem) !important;
+                }
+            }
+            #extra-reference-carousel { padding-bottom: 0 !important; }
+        #extra-reference-carousel .model-carousel { padding-bottom: 0 !important; }
+    </style>
+    <script src="soldagem-template.js?v=bloco-urgencia-vermelho-1" defer></script>
+</head>
+<body style="background:#f6f9ff;" class="text-zinc-900 antialiased selection:bg-lime-500 selection:text-zinc-900 pb-0 overflow-x-hidden">
+<div class="bg-[#ef5b4d] text-white text-center py-2 px-2 sm:px-4 text-[11px] sm:text-sm font-bold text-balance">
+    DESCONTO DISPON&Iacute;VEL APENAS HOJE, <span id="dynamic-date"></span>
+</div>
+<section style="background: linear-gradient(180deg, #2563eb 0%, #3b82f6 58%, #93c5fd 100%);" class="text-zinc-900 pt-10 pb-16 sm:pt-12 sm:pb-20 px-4 border-t border-black/5"><div class="max-w-4xl mx-auto flex flex-col items-center text-center"><div class="inline-flex items-center gap-1.5 sm:gap-2 bg-blue-100 text-blue-700 px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-sm font-bold mb-6 whitespace-nowrap tracking-wide">&#128274; COMPRA 100% SEGURA E PROTEGIDA</div><h1 class="text-[26px] sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 sm:mb-8 text-balance text-white">
+                Fa&ccedil;a <span class="text-zinc-950 font-black">sua pigmenta&ccedil;&atilde;o sem mancha</span> no pr&oacute;ximo corte com o <span class="text-white font-black">passo a passo pronto</span> do Mapa Visual
+            </h1><div class="hero-mockup-wrap w-full max-w-4xl aspect-video flex items-center justify-center mt-4 sm:mt-6 mb-8 sm:mb-10 relative"><div class="mockup-card w-full h-full flex items-center justify-center p-0 relative overflow-visible"><img src="assets/optimized/mockup-principal-a8806c48.webp" alt="Mockup principal do Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros" class="real-mockup-img" loading="eager" fetchpriority="high" decoding="async"></div></div><p style="font-weight:650 !important;color:rgba(255,255,255,0.96);" class="text-sm sm:text-lg md:text-xl mb-8 max-w-2xl text-balance px-2">
+                Com um mapa visual simples, voc&ecirc; v&ecirc; o passo a passo para preparar, aplicar e finalizar a pigmenta&ccedil;&atilde;o sem ficar perdido, sem adivinhar e sem medo de errar no cliente. <span style="font-weight:900 !important;color:#a3e635;" class="whitespace-nowrap">Por apenas 17,90</span>
+            </p><div class="hero-bullets flex flex-col gap-2.5 sm:gap-3 w-full max-w-xl mb-8 px-2"><div class="bg-blue-50 border border-blue-100 rounded-full px-4 sm:px-5 py-3 text-left text-xs sm:text-sm flex items-center gap-3 shadow-sm"><span class="text-blue-600 shrink-0">&check;</span><span>Melhore o acabamento dos cortes</span></div><div class="bg-blue-50 border border-blue-100 rounded-full px-4 sm:px-5 py-3 text-left text-xs sm:text-sm flex items-center gap-3 shadow-sm"><span class="text-blue-600 shrink-0">&check;</span><span>Feito para barbeiros que querem melhorar seus cortes</span></div></div><div class="flex flex-col items-center gap-3 sm:gap-4 w-full px-2"><a href="#oferta" class="w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-xl px-4 sm:px-12 py-4 sm:py-5 rounded-lg transition-colors duration-300 shadow-sm uppercase tracking-wide">QUERO O MAPAS AGORA</a><p class="text-zinc-500 text-xs sm:text-sm flex flex-wrap items-center justify-center text-center gap-1.5 font-bold"><i class="ph-fill ph-shield-check text-base"></i> Voc&ecirc; recebe tudo na hora, direto no seu WhatsApp e no seu e-mail</p></div></div></section>
+<section id="extra-reference-carousel" style="background:#f6f9ff;padding-top:2rem !important;padding-bottom:0 !important;" class="relative border-t border-black/5"><div class="max-w-6xl mx-auto px-4 mb-6 sm:mb-8 text-center"><h2 class="text-[22px] sm:text-3xl font-bold text-zinc-900 text-balance leading-snug">VEJA COMO SEUS CORTES VAI FICAR DEPOIS DA PIGMENTA&Ccedil;&Atilde;O</h2></div><div class="relative max-w-7xl mx-auto w-full overflow-hidden space-y-3 sm:space-y-5"><div class="relative w-full overflow-hidden"><div class="absolute inset-y-0 left-0 w-8 sm:w-16 md:w-32 bg-gradient-to-r from-[#f6f9ff] to-transparent z-10 pointer-events-none"></div><div class="absolute inset-y-0 right-0 w-8 sm:w-16 md:w-32 bg-gradient-to-l from-[#f6f9ff] to-transparent z-10 pointer-events-none"></div><div id="auto-carousel-top" class="model-carousel flex gap-4 sm:gap-6 md:gap-8 overflow-hidden hide-scrollbar py-2 sm:py-4 px-2 sm:px-6 md:px-10 items-center"><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-01-preparacao-correta-antes-da-pigmentacao-3d61b9f0.webp" alt="Mapa visual do carrossel superior 1" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-02-Como-Escolher-o-Tom-Certo-da-Pigmentacao-eec247c9.webp" alt="Mapa visual do carrossel superior 2" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/MAPA-03-ONDE-APLICAR-PARA-VALORIZAR-O-DEGRADE-05992930.webp" alt="Mapa visual do carrossel superior 3" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/MAPA-04-COMO-EVITAR-MANCHAS-E-EXCESSO-DE-PIGMENTACAO-411fb926.webp" alt="Mapa visual do carrossel superior 4" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-07-pigmentacao-no-high-fade-ee2357fb.webp" alt="Mapa visual do carrossel superior 5" class="carousel-img" loading="lazy" decoding="async"></div></div></div></div><div class="relative w-full overflow-hidden"><div class="absolute inset-y-0 left-0 w-8 sm:w-16 md:w-32 bg-gradient-to-r from-[#f6f9ff] to-transparent z-10 pointer-events-none"></div><div class="absolute inset-y-0 right-0 w-8 sm:w-16 md:w-32 bg-gradient-to-l from-[#f6f9ff] to-transparent z-10 pointer-events-none"></div><div id="auto-carousel-bottom" class="model-carousel flex gap-4 sm:gap-6 md:gap-8 overflow-hidden hide-scrollbar py-2 sm:py-4 px-2 sm:px-6 md:px-10 items-center"><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-05-Aplicacao-basica-para-iniciantes-7cf88047.webp" alt="Mapa visual do carrossel inferior 1" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-07-pigmentacao-no-high-fade-ee2357fb.webp" alt="Mapa visual do carrossel inferior 2" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-10-Pigmentacao-em-falhas-e-entradas-bcf5ebcc.webp" alt="Mapa visual do carrossel inferior 3" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-11-Acabamenrto-marcado-com-pigmentacao-c1504bcb.webp" alt="Mapa visual do carrossel inferior 4" class="carousel-img" loading="lazy" decoding="async"></div></div><div class="flex-none w-56 sm:w-72 md:w-80"><div class="h-[27rem] flex items-center justify-center p-0"><img src="assets/optimized/Mapa-12-Finalizacao-do-resultado-perfeito-10e90074.webp" alt="Mapa visual do carrossel inferior 5" class="carousel-img" loading="lazy" decoding="async"></div></div></div></div><div class="mt-10 sm:mt-14 px-4"><div class="w-full max-w-5xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-5 sm:gap-8 text-center"><div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-3"><span class="text-5xl leading-none">&#128506;</span><h3 class="text-lg sm:text-xl font-bold text-zinc-950">Escolhe o mapa de corte</h3></div><div class="text-4xl sm:text-6xl text-green-600 font-bold rotate-90 md:rotate-0">&rarr;</div><div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-3"><span class="text-5xl leading-none">&#129524;</span><h3 class="text-lg sm:text-xl font-bold text-zinc-950">Aplica a pigmenta&ccedil;&atilde;o</h3></div><div class="text-4xl sm:text-6xl text-green-600 font-bold rotate-90 md:rotate-0">&rarr;</div><div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-3"><span class="text-5xl leading-none">&#9986;</span><h3 class="text-lg sm:text-xl font-bold text-zinc-950">Seu corte finalizado</h3></div></div><div class="mt-8 sm:mt-12 flex justify-center"><img src="assets/optimized/Antes-de-depois-Moicano-89a16b3a.webp" alt="Antes e depois moicano com pigmenta&ccedil;&atilde;o" class="w-full max-w-sm sm:max-w-md h-auto object-contain drop-shadow-2xl rounded-xl mb-8 sm:mb-10" loading="lazy" decoding="async"></div></div></div></div></section>
+<section style="background: linear-gradient(180deg, #3b82f6 0%, #7dd3fc 100%);" class="text-zinc-900 py-16 sm:py-20 px-4 border-y border-black/5"><div class="max-w-5xl mx-auto"><h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-balance leading-snug">FINALIZE MELHOR SEU CORTE E GANHE MAIS</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5 items-stretch"><div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full"><div class="text-5xl sm:text-6xl leading-none shrink-0">&#128683;</div><div><h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Menos risco de manchas e falhas</h3><p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Aplique com mais seguran&ccedil;a e evite erros que estragam o acabamento.</p></div></div><div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full"><div class="text-5xl sm:text-6xl leading-none shrink-0">&#9986;</div><div><h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Cortes com acabamento mais bonito</h3><p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Deixe o corte mais marcado, preenchido e valorizado.</p></div></div><div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full"><div class="text-5xl sm:text-6xl leading-none shrink-0">&#128506;</div><div><h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Simples de aplicar, visual e r&aacute;pido de consultar</h3><p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Veja o passo a passo r&aacute;pido e saiba exatamente o que fazer.</p></div></div><div class="bg-white border border-zinc-200 p-5 sm:p-6 rounded-2xl flex items-center gap-4 sm:gap-5 text-left shadow-sm h-full"><div class="text-5xl sm:text-6xl leading-none shrink-0">&#128193;</div><div><h3 class="text-lg sm:text-xl font-bold text-zinc-900 mb-2">Material organizado</h3><p class="text-sm sm:text-base text-zinc-600 font-bold leading-relaxed">Abra, siga o passo a passo e aplique imediatamente no corte.</p></div></div></div><div class="text-center mt-10"><a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-10 py-4 sm:py-5 rounded-lg transition-colors shadow-sm uppercase tracking-wide">QUERO O MAPAS AGORA</a></div></div></section>
+<section style="background:#f6f9ff;" class="py-16 sm:py-20 px-4 border-t border-black/5"><div class="max-w-6xl mx-auto"><h2 class="text-[24px] sm:text-4xl md:text-5xl font-bold text-center text-zinc-900 mb-10 sm:mb-12 text-balance leading-tight">SAIBA EXATAMENTE O QUE FAZER</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"><div class="rounded-2xl border border-red-200 bg-red-50 p-6 sm:p-8 shadow-sm"><h3 class="text-xl sm:text-2xl font-bold text-red-700 mb-6 uppercase">Antes</h3><ul class="space-y-4 text-sm sm:text-base text-zinc-800"><li style="font-weight:800 !important;">Cortes comuns</li><li style="font-weight:800 !important;">O cliente sai com um corte simples.</li><li style="font-weight:800 !important;">Tem medo de manchar o cabelo</li><li style="font-weight:800 !important;">Cliente s&oacute; faz um corte</li></ul></div><div class="rounded-2xl border border-green-200 bg-green-50 p-6 sm:p-8 shadow-sm"><h3 class="text-xl sm:text-2xl font-bold text-green-700 mb-6 uppercase">Depois</h3><ul class="space-y-4 text-sm sm:text-base text-zinc-800"><li style="font-weight:800 !important;">Entrega um corte mais bonito e valorizado.</li><li style="font-weight:800 !important;">O cliente sai com um acabamento mais marcado.</li><li style="font-weight:800 !important;">Sabe como aplicar as t&eacute;cnicas corretas</li><li style="font-weight:800 !important;">Fideliza cliente e volta mais vezes</li></ul></div></div></div></section>
+<section class="bg-[#ef5b4d] py-16 sm:py-20 px-4 border-t border-black/10"><div class="max-w-4xl mx-auto text-center"><div class="inline-flex items-center justify-center gap-2 rounded-full bg-white/35 border border-white/45 px-4 sm:px-5 py-2 mb-7 sm:mb-9 text-zinc-900 shadow-sm backdrop-blur-sm"><span class="keep-bold text-[11px] sm:text-sm uppercase tracking-wide">Oferta acaba em</span><span id="urgency-timer" class="keep-bold text-base sm:text-xl leading-none tabular-nums">10:00</span></div><h2 class="text-[24px] sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-5 sm:mb-6 text-balance leading-tight">PARE DE DEIXAR DINHEIRO NA CADEIRA DA BARBEARIA POR N&Atilde;O SABER PIGMENTAR CERTO</h2><p class="text-zinc-700 font-bold text-sm sm:text-xl mb-8">A pigmenta&ccedil;&atilde;o &eacute; aquele detalhe que muda o visual do corte.</p><a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-10 py-4 sm:py-5 rounded-lg transition-colors shadow-sm uppercase tracking-wide">QUERO O MAPAS AGORA</a></div></section>
+
+<section style="background:linear-gradient(180deg,#f6f9ff 0%,#bfdbfe 45%,#2563eb 100%);padding-top:2rem !important;padding-bottom:0.75rem !important;" class="relative border-t border-black/5">
+    <div class="relative max-w-7xl mx-auto w-full overflow-hidden space-y-3 sm:space-y-5">
+        <div class="relative w-full overflow-hidden">
+            <div class="absolute inset-y-0 left-0 w-8 sm:w-16 md:w-32 bg-gradient-to-r from-[#f6f9ff] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute inset-y-0 right-0 w-8 sm:w-16 md:w-32 bg-gradient-to-l from-[#f6f9ff] to-transparent z-10 pointer-events-none"></div>
+            <div id="auto-carousel-extra-top" class="model-carousel flex gap-4 sm:gap-6 md:gap-8 overflow-hidden hide-scrollbar py-2 sm:py-4 px-2 sm:px-6 md:px-10 items-center">
+                <div class="flex-none w-60 sm:w-68 md:w-72"><div class="h-[21rem] flex items-center justify-center p-0"><img src="assets/optimized/americano-6f422078.webp" alt="Refer&ecirc;ncia de corte 1" style="width:100%;height:21rem;object-fit:cover;background:transparent;" class="rounded-xl shadow-md" loading="lazy" decoding="async"></div></div><div class="flex-none w-60 sm:w-68 md:w-72"><div class="h-[21rem] flex items-center justify-center p-0"><img src="assets/optimized/High-fade-80a37261.webp" alt="Refer&ecirc;ncia de corte 2" style="width:100%;height:21rem;object-fit:cover;background:transparent;" class="rounded-xl shadow-md" loading="lazy" decoding="async"></div></div><div class="flex-none w-60 sm:w-68 md:w-72"><div class="h-[21rem] flex items-center justify-center p-0"><img src="assets/optimized/Low-fade-ebb97891.webp" alt="Refer&ecirc;ncia de corte 3" style="width:100%;height:21rem;object-fit:cover;background:transparent;" class="rounded-xl shadow-md" loading="lazy" decoding="async"></div></div><div class="flex-none w-60 sm:w-68 md:w-72"><div class="h-[21rem] flex items-center justify-center p-0"><img src="assets/optimized/Moica-trem-441d4da3.webp" alt="Refer&ecirc;ncia de corte 4" style="width:100%;height:21rem;object-fit:cover;background:transparent;" class="rounded-xl shadow-md" loading="lazy" decoding="async"></div></div><div class="flex-none w-60 sm:w-68 md:w-72"><div class="h-[21rem] flex items-center justify-center p-0"><img src="assets/optimized/Mullet-curto-0c5eba26.webp" alt="Refer&ecirc;ncia de corte 5" style="width:100%;height:21rem;object-fit:cover;background:transparent;" class="rounded-xl shadow-md" loading="lazy" decoding="async"></div></div><div class="flex-none w-60 sm:w-68 md:w-72"><div class="h-[21rem] flex items-center justify-center p-0"><img src="assets/optimized/mullet-medio-f902e995.webp" alt="Refer&ecirc;ncia de corte 6" style="width:100%;height:21rem;object-fit:cover;background:transparent;" class="rounded-xl shadow-md" loading="lazy" decoding="async"></div></div>
+            </div>
+        </div></div>
+</section>
+<section style="background: linear-gradient(180deg, #2563eb 0%, #93c5fd 100%);" class="py-16 sm:py-20 px-4 border-t border-black/5"><div class="max-w-6xl mx-auto"><h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-center text-zinc-900 mb-10 sm:mb-12 text-balance leading-snug">ESSE MAPA &Eacute; PARA VOC&Ecirc; QUE QUER:</h2><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5"><div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5"><img src="assets/optimized/check-verde.webp" alt="" class="custom-check" loading="eager" decoding="async"><h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Come&ccedil;ar a fazer pigmenta&ccedil;&atilde;o sem medo</h3></div><div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5"><img src="assets/optimized/check-verde.webp" alt="" class="custom-check" loading="eager" decoding="async"><h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Deixar seus cortes mais bonitos</h3></div><div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5"><img src="assets/optimized/check-verde.webp" alt="" class="custom-check" loading="eager" decoding="async"><h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Cobrar mais pelo atendimento</h3></div><div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5"><img src="assets/optimized/check-verde.webp" alt="" class="custom-check" loading="eager" decoding="async"><h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Parar de ficar para tr&aacute;s</h3></div><div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5"><img src="assets/optimized/check-verde.webp" alt="" class="custom-check" loading="eager" decoding="async"><h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Ter um material f&aacute;cil de consultar</h3></div><div class="ideal-card rounded-2xl p-5 sm:p-7 flex items-center gap-4 sm:gap-5"><img src="assets/optimized/check-verde.webp" alt="" class="custom-check" loading="eager" decoding="async"><h3 class="font-bold text-zinc-900 text-sm sm:text-base uppercase leading-snug">Deixar o cliente mais satisfeito</h3></div></div></div></section>
+<section style="background: linear-gradient(180deg, #0f2f73 0%, #1d4ed8 55%, #3b82f6 100%);" class="py-16 sm:py-20 px-4 border-y border-blue-900"><div class="max-w-5xl mx-auto text-center"><h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8 text-balance leading-snug">VEJA TUDO O QUE VOC&Ecirc; RECEBE MAPA VISUAL</h2><div class="mx-auto h-80 sm:h-[500px] flex items-center justify-center overflow-visible mb-6 sm:mb-8"><img src="assets/optimized/mockup-principal-a8806c48.webp" alt="Mockup do Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros" class="w-[112%] h-[112%] object-contain drop-shadow-2xl" loading="lazy" decoding="async"></div><div class="bg-white text-zinc-900 rounded-xl border border-blue-100 shadow-2xl max-w-3xl mx-auto p-6 sm:p-8 text-left"><h3 class="font-bold text-zinc-950 text-center text-base sm:text-lg mb-2">Voc&ecirc; vai receber:</h3><p class="text-center text-zinc-500 text-xs sm:text-sm font-bold mb-6">Tudo organizado para consultar r&aacute;pido e aplicar no corte.</p><ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-x-8 sm:gap-y-5 mb-6 text-xs sm:text-sm font-black" style="font-weight:900 !important;"><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#128193;</span><span>Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#129524;</span><span>Lista de materiais para usar na pigmenta&ccedil;&atilde;o</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#9986;</span><span>Passo a passo da aplica&ccedil;&atilde;o</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#127919;</span><span>Como preparar o cabelo antes de pigmentar</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#128683;</span><span>Cuidados para evitar manchas e falhas</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#128293;</span><span>Como deixar o acabamento mais bonito</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#128194;</span><span>Pack separado por corte no Google Drive</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#9889;</span><span>Acesso imediato ap&oacute;s a compra</span></li><li class="flex items-center gap-3 text-zinc-800" style="font-weight:900 !important;"><span class="shrink-0">&#9854;</span><span>Acesso vital&iacute;cio</span></li></ul><div class="border-t border-zinc-200 pt-5 text-center"><p class="font-bold text-blue-700 text-xs sm:text-sm uppercase mb-6">E MUITO MAIS...</p><a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-10 py-4 sm:py-5 rounded-lg transition-colors shadow-sm uppercase tracking-wide">QUERO O MAPAS AGORA</a></div></div></div></section>
+<section style="background:#f6f9ff;" class="py-16 sm:py-20 px-4 border-t border-black/5"><div class="max-w-6xl mx-auto"><h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-center text-zinc-900 mb-5 text-balance leading-snug">E AINDA TEM A MAIS</h2><p class="text-center text-zinc-700 font-bold text-sm sm:text-lg mb-5">Voc&ecirc; ainda recebe gratuito hoje</p><div class="mx-auto mb-8 w-fit rounded-full bg-red-100 border border-red-200 px-5 py-2 text-red-700 text-xs sm:text-sm font-bold">5 B&ocirc;nus exclusivos</div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"><div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col"><div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible"><img src="assets/optimized/Bonus-1-e9e596ca.webp" alt="Mockup do b&ocirc;nus 1" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async"></div><div class="p-6 sm:p-7 flex flex-col flex-1"><h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> B&ocirc;nus 1</h3><h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Tabela de Pre&ccedil;o para Cobrar pela Pigmenta&ccedil;&atilde;o</h4><p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Veja quanto cobrar pela pigmenta&ccedil;&atilde;o junto com o corte.</p><div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> B&Ocirc;NUS GRATUITO HOJE</div></div></div><div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col"><div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible"><img src="assets/optimized/Bonus-2-935bb810.webp" alt="Mockup do b&ocirc;nus 2" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async"></div><div class="p-6 sm:p-7 flex flex-col flex-1"><h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> B&ocirc;nus 2</h3><h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Guia de Cortes que Combinam com Pigmenta&ccedil;&atilde;o</h4><p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Saiba quais cortes ficam mais bonitos com esse acabamento.</p><div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> B&Ocirc;NUS GRATUITO HOJE</div></div></div><div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col"><div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible"><img src="assets/optimized/bonus-3-48fc0228.webp" alt="Mockup do b&ocirc;nus 3" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async"></div><div class="p-6 sm:p-7 flex flex-col flex-1"><h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> B&ocirc;nus 3</h3><h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Modelos de Risquinhos P&oacute;s Corte</h4><p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Tenha ideias de risquinhos para mostrar ao cliente e aplicar no corte.</p><div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> B&Ocirc;NUS GRATUITO HOJE</div></div></div><div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col"><div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible"><img src="assets/optimized/Bonus-4-b2b8ed4f.webp" alt="Mockup do b&ocirc;nus 4" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async"></div><div class="p-6 sm:p-7 flex flex-col flex-1"><h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> B&ocirc;nus 4</h3><h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">T&eacute;cnica Extra: Acabamento Mais Marcado no Degrad&ecirc;</h4><p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Aprenda a usar a pigmenta&ccedil;&atilde;o para valorizar ainda mais o degrad&ecirc;.</p><div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> B&Ocirc;NUS GRATUITO HOJE</div></div></div><div class="bg-white rounded-xl border border-blue-100 overflow-hidden shadow-sm flex flex-col"><div class="bg-blue-50/60 h-72 sm:h-80 flex items-center justify-center px-4 py-5 border-b border-blue-100 overflow-visible"><img src="assets/optimized/bonus-5-7c7f00e3.webp" alt="Mockup do b&ocirc;nus 5" class="w-full h-full object-contain drop-shadow-xl" loading="lazy" decoding="async"></div><div class="p-6 sm:p-7 flex flex-col flex-1"><h3 class="font-bold text-green-700 text-xl sm:text-2xl mb-3 uppercase flex items-center gap-2"><i class="ph-fill ph-gift"></i> B&ocirc;nus 5</h3><h4 class="font-bold text-zinc-950 text-lg sm:text-xl leading-tight mb-2">Modelos de Antes e Depois para se Inspirar</h4><p class="text-xs sm:text-sm text-zinc-700 font-bold leading-relaxed mb-5">Veja refer&ecirc;ncias visuais para entender como um bom resultado deve ficar.</p><div class="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-red-200 bg-red-100 px-4 py-2 text-xs font-bold text-red-700 shadow-sm"><i class="ph-fill ph-gift"></i> B&Ocirc;NUS GRATUITO HOJE</div></div></div></div></div></section>
+<section id="oferta" style="background: linear-gradient(180deg, #0b1f55 0%, #1e40af 58%, #1d4ed8 100%);" class="py-16 sm:py-24 px-4 text-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+    <div class="max-w-6xl mx-auto relative z-10">
+        <h2 class="text-[26px] sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16 text-balance leading-tight">ESCOLHA O SEU PACOTE.</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+            <div class="bg-white text-zinc-900 rounded-2xl p-6 sm:p-8 border border-blue-100 shadow-2xl flex flex-col">
+                <h3 class="text-xl sm:text-2xl font-bold text-center mb-6 uppercase">PACOTE B&Aacute;SICO</h3>
+                <div class="h-60 sm:h-72 flex items-center justify-center text-center font-bold text-blue-700 mb-7 p-0 overflow-visible">
+                    <img src="assets/optimized/mockup-basico-514cb55d.webp" alt="Mockup do pacote b&aacute;sico" class="w-[112%] h-[112%] object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                </div>
+                <ul class="space-y-4 mb-10 text-base sm:text-lg text-zinc-800">
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128193;</span><span>Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#129524;</span><span>Lista de materiais para usar na pigmenta&ccedil;&atilde;o</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#9986;</span><span>Passo a passo da aplica&ccedil;&atilde;o</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#127919;</span><span>Como preparar o cabelo antes de pigmentar</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128683;</span><span>Cuidados para evitar manchas e falhas</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128293;</span><span>Como deixar o acabamento mais bonito</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128194;</span><span>Pack separado por corte no Google Drive</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#9889;</span><span>Acesso imediato ap&oacute;s a compra</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#9854;</span><span>Acesso vital&iacute;cio</span></li>
+                </ul>
+                <div class="mt-auto text-center">
+                    <p class="text-zinc-500 line-through font-bold mb-1">De R$ 47,90</p>
+                    <p class="price-text text-green-600 font-bold text-2xl sm:text-3xl mb-5">Por apenas R$ 17,90</p>
+                    <a href="https://pay.hotmart.com/W106594083W?off=8ztc3ekb&checkoutMode=10" class="block w-full bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold py-4 sm:py-5 rounded-lg transition-colors uppercase text-xs sm:text-sm px-4 shadow-sm">QUERO ACESSO B&Aacute;SICO</a>
+                    <div style="background:#000000 !important;border:1px solid rgba(185,28,28,0.75);" class="mt-5 rounded-md px-3 py-3 text-center shadow-lg overflow-hidden">
+                            <div style="font-weight:950 !important;color:#dc2626;" class="uppercase text-sm sm:text-base leading-tight tracking-wide">AINDA DA TEMPO DE LEVAR A MELHOR OP&Ccedil;&Atilde;O!</div>
+                            <div class="mt-1 flex items-center justify-between gap-3">
+                                <div style="font-weight:950 !important;color:#dc2626;" class="text-5xl sm:text-6xl leading-none">&#11015;</div>
+                                <div style="font-weight:950 !important;color:#ffffff;" class="text-base sm:text-xl leading-tight">
+                                    Leve mais e pague menos . 97%<br>
+                                    escolhem a nossa <span style="color:#22c55e;font-weight:950 !important;">super oferta!</span>
+                                </div>
+                                <div style="font-weight:950 !important;color:#dc2626;" class="text-5xl sm:text-6xl leading-none">&#11015;</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="bg-white text-zinc-900 rounded-2xl p-6 sm:p-8 border-2 border-blue-400 shadow-[0_0_35px_rgba(59,130,246,0.55)] flex flex-col relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-400 text-blue-800 rounded-full px-5 py-2 font-bold text-[11px] sm:text-xs uppercase shadow-lg whitespace-nowrap">PACOTE COMPLETO &mdash; RECOMENDADO</div>
+                <h3 class="text-xl sm:text-2xl font-bold text-center mb-6 mt-3 uppercase text-blue-600">PACOTE COMPLETO</h3>
+                <div class="h-72 sm:h-80 flex items-center justify-center text-center font-bold text-[#20c95d] mt-5 mb-10 sm:mb-12 p-0 overflow-visible relative">
+                    <div class="absolute top-4 left-1/2 -translate-x-1/2 -rotate-6 bg-yellow-300 text-zinc-950 px-4 py-1 rounded text-[10px] font-bold uppercase shadow-md z-10">Mais vendido</div>
+                    <img src="assets/optimized/mockup-principal-a8806c48.webp" alt="Mockup do pacote completo" class="w-[124%] h-[124%] object-contain drop-shadow-xl" loading="lazy" decoding="async">
+                </div>
+                <ul class="space-y-4 mb-6 text-base sm:text-lg text-zinc-800">
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128193;</span><span>Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#129524;</span><span>Lista de materiais para usar na pigmenta&ccedil;&atilde;o</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#9986;</span><span>Passo a passo da aplica&ccedil;&atilde;o</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#127919;</span><span>Como preparar o cabelo antes de pigmentar</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128683;</span><span>Cuidados para evitar manchas e falhas</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128293;</span><span>Como deixar o acabamento mais bonito</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#128194;</span><span>Pack separado por corte no Google Drive</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#9889;</span><span>Acesso imediato ap&oacute;s a compra</span></li>
+                        <li class="flex gap-3" style="font-weight:800 !important;"><span class="shrink-0">&#9854;</span><span>Acesso vital&iacute;cio</span></li>
+                </ul>
+                <div class="border border-blue-100 rounded-xl p-5 mb-8 bg-blue-50/60 shadow-sm">
+                    <h4 class="text-blue-700 font-bold text-xs uppercase tracking-wide mb-4">B&ocirc;nus Exclusivos:</h4>
+                    <ul class="space-y-3 text-base sm:text-lg text-zinc-900">
+                            <li style="font-weight:800 !important;">&#127873; Tabela de Pre&ccedil;o para Cobrar pela Pigmenta&ccedil;&atilde;o</li>
+                            <li style="font-weight:800 !important;">&#127873; Guia de Cortes que Combinam com Pigmenta&ccedil;&atilde;o</li>
+                            <li style="font-weight:800 !important;">&#127873; Modelos de Risquinhos P&oacute;s Corte</li>
+                            <li style="font-weight:800 !important;">&#127873; T&eacute;cnica Extra: Acabamento Mais Marcado no Degrad&ecirc;</li>
+                            <li style="font-weight:800 !important;">&#127873; Modelos de Antes e Depois para se Inspirar</li>
+                    </ul>
+                </div>
+                <div class="mt-auto text-center">
+                    <p class="block text-red-600 text-base sm:text-lg font-bold mb-2">VOC&Ecirc; ECONOMIZA R$ 40,00 COM ESSE PACOTE</p>
+                    <p class="text-zinc-500 line-through font-bold mb-1">De R$ 67,90</p>
+                    <p class="price-text text-green-600 font-bold text-2xl sm:text-3xl mb-5">Por apenas R$ 27,90</p>
+                    <a href="https://pay.hotmart.com/W106594083W?off=3gc88blv&checkoutMode=10" class="block w-full bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold py-4 sm:py-5 rounded-lg transition-colors uppercase text-xs sm:text-sm px-4 shadow-sm">QUERO ACESSO COMPLETO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="background:#f6f9ff;" class="py-16 sm:py-20 px-4 border-t border-black/5"><div class="max-w-4xl mx-auto text-center"><div class="mx-auto mb-6 flex items-center justify-center"><img src="assets/optimized/garantia-30-dias-7ff12248.webp" alt="Selo de garantia de 30 dias" class="w-36 sm:w-44 h-auto object-contain drop-shadow-xl" loading="lazy" decoding="async"></div><h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-zinc-900 mb-6 text-balance leading-snug">USE POR 30 DIAS SEM RISCO.</h2><p class="text-zinc-600 font-bold text-sm sm:text-lg leading-relaxed mb-3">Voc&ecirc; tem 30 dias de garantia para testar o Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros.</p><p class="text-zinc-600 font-bold text-sm sm:text-lg leading-relaxed mb-8">Se voc&ecirc; acessar o material e sentir que ele n&atilde;o &eacute; para voc&ecirc;, &eacute; s&oacute; pedir o reembolso dentro do prazo.</p><a href="#oferta" class="inline-block w-full sm:w-auto bg-lime-400 hover:bg-lime-500 text-zinc-950 font-bold text-sm sm:text-lg px-4 sm:px-10 py-4 sm:py-5 rounded-lg transition-colors shadow-sm uppercase tracking-wide">QUERO O MAPAS AGORA</a></div></section>
+<section style="background: linear-gradient(180deg, #60a5fa 0%, #bfdbfe 100%);" class="py-16 sm:py-20 px-4 border-t border-black/5"><div class="max-w-6xl mx-auto"><h2 class="text-[28px] sm:text-4xl md:text-5xl font-bold text-center text-zinc-900 mb-2 text-balance leading-tight">COMO FUNCIONA O ACESSO</h2><p class="text-center text-zinc-900 font-bold text-sm sm:text-base mb-10 sm:mb-14 uppercase">(Passo a passo)</p><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10"><div class="text-center"><div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">&#128722;</div><h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">Passo 1 &mdash; Fa&ccedil;a sua compra</h4><p class="text-sm text-zinc-600 leading-relaxed font-bold">Escolha o pacote e finalize o pagamento.</p></div><div class="text-center"><div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">&#128179;</div><h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">Passo 2 &mdash; Receba o acesso imediato</h4><p class="text-sm text-zinc-600 leading-relaxed font-bold">Ap&oacute;s a compra, voc&ecirc; recebe o link do pack.</p></div><div class="text-center"><div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">&#128193;</div><h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">Passo 3 &mdash; Abra no Google Drive</h4><p class="text-sm text-zinc-600 leading-relaxed font-bold">Acesse os arquivos organizados por corte.</p></div><div class="text-center"><div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">&#9986;</div><h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">Passo 4 &mdash; Escolha o corte do cliente</h4><p class="text-sm text-zinc-600 leading-relaxed font-bold">Selecione o corte que voc&ecirc; vai fazer.</p></div><div class="text-center"><div class="mx-auto mb-5 h-20 sm:h-24 flex items-center justify-center text-6xl sm:text-7xl">&#127919;</div><h4 class="font-bold text-zinc-900 text-base sm:text-lg mb-4 leading-snug">Passo 5 &mdash; Consulte e aplique</h4><p class="text-sm text-zinc-600 leading-relaxed font-bold">Veja o passo a passo e fa&ccedil;a com mais seguran&ccedil;a.</p></div></div></div></section>
+<section style="background:#f6f9ff;" class="py-16 sm:py-20 px-4 border-t border-black/5"><div class="max-w-3xl mx-auto"><h2 class="text-[22px] sm:text-3xl md:text-4xl font-bold text-zinc-900 text-center mb-10 sm:mb-12 text-balance leading-snug">PERGUNTAS FREQUENTES</h2><div class="space-y-3 sm:space-y-4 px-2 sm:px-0"><details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm" open><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">1. Preciso saber fazer pigmenta&ccedil;&atilde;o para usar o mapa?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">N&atilde;o. Ele foi feito para barbeiros iniciantes e intermedi&aacute;rios.</div></details><details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm" ><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">2. Como vou receber o material?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Voc&ecirc; recebe o acesso ao pack pelo Google Drive.</div></details><details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm" ><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">3. O acesso &eacute; imediato?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. Ap&oacute;s a compra, voc&ecirc; j&aacute; recebe o link para acessar.</div></details><details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm" ><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">4. O produto mostra quais materiais usar?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. Voc&ecirc; ver&aacute; os materiais necess&aacute;rios para fazer a pigmenta&ccedil;&atilde;o.</div></details><details class="bg-zinc-50 rounded-xl border border-zinc-200 group overflow-hidden shadow-sm" ><summary class="p-5 sm:p-6 cursor-pointer flex justify-between items-center font-bold text-sm sm:text-base text-zinc-900 select-none">5. Tem garantia?<i class="ph-bold ph-caret-down transition-transform duration-300 faq-icon text-zinc-400 shrink-0 ml-2"></i></summary><div class="px-5 sm:px-6 pb-5 sm:pb-6 text-zinc-600 text-xs sm:text-sm leading-relaxed font-bold">Sim. Voc&ecirc; tem 30 dias de garantia ou seu dinheiro de volta.</div></details></div></div></section>
+<footer style="background: linear-gradient(180deg, #1e40af 0%, #0b1f55 100%);" class="py-10 sm:py-12 px-4 border-t border-blue-950 text-center"><div class="max-w-4xl mx-auto text-white/75 text-xs sm:text-sm space-y-3 sm:space-y-4"><h4 class="font-bold text-white text-base sm:text-lg mb-1 sm:mb-2 text-balance">Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros</h4><p class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-bold"><span>Termos de Uso</span><span>|</span><span>Pol&iacute;tica de Privacidade</span><span>|</span><span>Suporte</span></p><div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/15 text-[10px] sm:text-xs text-white/60 font-bold"><p class="text-balance px-4 leading-relaxed">Todos os direitos sobre a obra &ldquo;Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros&rdquo; s&atilde;o reservados ao Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros, nos termos da Lei n&ordm; 9.610/98.</p><p class="mt-4 sm:mt-6 font-bold text-white/80 text-balance">Voc&ecirc; recebe tudo na hora, direto no seu WhatsApp e no seu e-mail</p><p class="mt-4 sm:mt-6 font-bold text-white/80 text-balance">&copy; <span id="current-year"></span> Mapa Visual Pigmenta&ccedil;&atilde;o F&aacute;cil para Barbeiros. Todos os direitos reservados.</p></div></div></footer>
+<div id="sales-notification" class="fixed top-4 left-4 z-50 bg-white border border-zinc-200 p-2 sm:p-3 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.1)] flex items-center gap-3 sm:gap-4 transition-all duration-500 transform -translate-y-full opacity-0 max-w-[calc(100vw-2rem)] w-64 sm:w-72"><div class="w-8 sm:w-10 h-8 sm:h-10 bg-green-100 text-green-600 rounded-md flex items-center justify-center shrink-0"><i class="ph-fill ph-shopping-bag text-lg sm:text-xl"></i></div><div class="overflow-hidden"><p class="text-xs sm:text-sm font-bold text-zinc-900 leading-tight truncate" id="buyer-name">Nome do Cliente</p><p class="text-[10px] sm:text-xs text-zinc-500 truncate font-bold">Acabou de comprar o Mapa Visual.</p></div></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            const dateEl = document.getElementById('dynamic-date');
+            const yearEl = document.getElementById('current-year');
+            if (dateEl) dateEl.textContent = today.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+            if (yearEl) yearEl.textContent = today.getFullYear();
+
+            const timerEl = document.getElementById('urgency-timer');
+            if (timerEl) {
+                let remainingSeconds = 10 * 60;
+                const renderTimer = () => {
+                    const minutes = String(Math.floor(remainingSeconds / 60)).padStart(2, '0');
+                    const seconds = String(remainingSeconds % 60).padStart(2, '0');
+                    timerEl.textContent = `${minutes}:${seconds}`;
+                };
+                renderTimer();
+                setInterval(() => {
+                    remainingSeconds = remainingSeconds > 0 ? remainingSeconds - 1 : 10 * 60;
+                    renderTimer();
+                }, 1000);
+            }
+        });
+
+        const buyers = [
+            "Carlos Henrique - SP", "Barbearia Elite", "Rafael Santos - MG",
+            "Joao Pedro - RJ", "Barber Pro", "Lucas Almeida - BA", "Felipe Costa - PR", "Studio Corte Fino"
+        ];
+        const notificationEl = document.getElementById('sales-notification');
+        const buyerNameEl = document.getElementById('buyer-name');
+
+        function triggerSaleNotification() {
+            if (!notificationEl || !buyerNameEl) return;
+            buyerNameEl.textContent = buyers[Math.floor(Math.random() * buyers.length)];
+            notificationEl.classList.remove('-translate-y-full', 'opacity-0');
+            setTimeout(() => notificationEl.classList.add('-translate-y-full', 'opacity-0'), 5000);
+        }
+
+        setTimeout(() => {
+            triggerSaleNotification();
+            setInterval(triggerSaleNotification, 20000);
+        }, 3000);
+
+        function setupAutoCarousel(carouselId, scrollSpeed = 1) {
+            const carousel = document.getElementById(carouselId);
+            if (!carousel) return;
+            const originalItems = Array.from(carousel.children);
+            [...originalItems, ...originalItems].forEach(item => carousel.appendChild(item.cloneNode(true)));
+            if (scrollSpeed < 0) carousel.scrollLeft = carousel.scrollWidth / 2;
+            function scrollCarousel() {
+                carousel.scrollLeft += scrollSpeed;
+                if (carousel.scrollLeft >= carousel.scrollWidth / 2) carousel.scrollLeft = 0;
+                if (carousel.scrollLeft <= 0 && scrollSpeed < 0) carousel.scrollLeft = carousel.scrollWidth / 2;
+                requestAnimationFrame(scrollCarousel);
+            }
+            requestAnimationFrame(scrollCarousel);
+        }
+
+        setupAutoCarousel('auto-carousel-top', 1);
+        setupAutoCarousel('auto-carousel-bottom', -1);
+        setupAutoCarousel('auto-carousel-extra-top', 1);
+
+        document.querySelectorAll('a[href="#oferta"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
