@@ -116,6 +116,20 @@
             pointer-events: none;
             user-select: none;
         }
+        @keyframes soldagemMarquee {
+            from { transform: translate3d(0, 0, 0); }
+            to { transform: translate3d(-50%, 0, 0); }
+        }
+        .model-carousel.soldagem-marquee {
+            width: max-content;
+            overflow: visible !important;
+            gap: 0.25rem !important;
+            animation: soldagemMarquee var(--soldagem-marquee-duration, 42s) linear infinite;
+            will-change: transform;
+        }
+        .model-carousel.soldagem-marquee-reverse {
+            animation-direction: reverse;
+        }
         .custom-check { width: 3rem; height: 3rem; flex: 0 0 3rem; object-fit: contain; display: block; }
         .photo-slot { width:100%; height:100%; min-height:12rem; border:2px dashed rgba(37,99,235,.38); border-radius:1.25rem; background:rgba(255,255,255,.55); }
         .carousel-img.photo-slot { height:24rem; }
@@ -630,9 +644,10 @@
                 }
             }
             #extra-reference-carousel { padding-bottom: 0 !important; }
-        #extra-reference-carousel .model-carousel { padding-bottom: 0 !important; }
+        #extra-reference-carousel .model-carousel { padding-top: 0 !important; padding-bottom: 0 !important; }
+        #extra-reference-carousel .relative.max-w-7xl { gap: 0 !important; }
     </style>
-    <script src="soldagem-template.js?v=antes-depois-menor-1" defer></script>
+    <script src="soldagem-template.js?v=carrosseis-esteira-1" defer></script>
 </head>
 <body style="background:#f6f9ff;" class="text-zinc-900 antialiased selection:bg-lime-500 selection:text-zinc-900 pb-0 overflow-x-hidden">
 <div class="bg-[#ef5b4d] text-white text-center py-2 px-2 sm:px-4 text-[11px] sm:text-sm font-bold text-balance">
