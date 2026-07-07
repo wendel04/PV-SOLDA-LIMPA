@@ -130,9 +130,129 @@
         .model-carousel.soldagem-marquee-reverse {
             animation-direction: reverse;
         }
+        @keyframes weldMapSlide {
+            from { transform: translate3d(0, 0, 0); }
+            to { transform: translate3d(-50%, 0, 0); }
+        }
+        .weld-map-section {
+            background: #f6f9ff;
+            padding: 2rem 0 0 !important;
+            overflow: hidden;
+        }
+        .weld-map-heading {
+            margin: 0 auto 0.75rem !important;
+            padding: 0 1rem;
+            max-width: 72rem;
+            text-align: center;
+        }
+        .weld-map-carousel-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 0 !important;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .weld-map-viewport {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .weld-map-track {
+            display: flex;
+            width: max-content;
+            gap: 0.25rem;
+            padding: 0 !important;
+            pointer-events: none;
+            user-select: none;
+            animation: weldMapSlide var(--weld-map-duration, 38s) linear infinite;
+            will-change: transform;
+        }
+        .weld-map-track.reverse {
+            animation-direction: reverse;
+        }
+        .weld-map-item {
+            flex: 0 0 min(92vw, 30rem);
+            width: min(92vw, 30rem);
+        }
+        .weld-map-frame {
+            height: 19rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .weld-map-img {
+            width: 100%;
+            height: 19rem;
+            max-height: 19rem;
+            object-fit: contain;
+            display: block;
+        }
+        .weld-map-viewport::before,
+        .weld-map-viewport::after {
+            content: "";
+            position: absolute;
+            inset-block: 0;
+            width: clamp(2rem, 8vw, 8rem);
+            z-index: 2;
+            pointer-events: none;
+        }
+        .weld-map-viewport::before {
+            left: 0;
+            background: linear-gradient(90deg, #f6f9ff, transparent);
+        }
+        .weld-map-viewport::after {
+            right: 0;
+            background: linear-gradient(270deg, #f6f9ff, transparent);
+        }
+        @media (max-width: 640px) {
+            .weld-map-section {
+                padding-top: 1.25rem !important;
+            }
+            .weld-map-heading {
+                margin-bottom: 0.35rem !important;
+            }
+            .weld-map-item {
+                flex-basis: min(92vw, 23rem);
+                width: min(92vw, 23rem);
+            }
+            .weld-map-frame,
+            .weld-map-img {
+                height: 15rem;
+                max-height: 15rem;
+            }
+        }
         .custom-check { width: 3rem; height: 3rem; flex: 0 0 3rem; object-fit: contain; display: block; }
         .photo-slot { width:100%; height:100%; min-height:12rem; border:2px dashed rgba(37,99,235,.38); border-radius:1.25rem; background:rgba(255,255,255,.55); }
         .carousel-img.photo-slot { height:24rem; }
+        .soldagem-photo-slot {
+            width: 100%;
+            height: 100%;
+            min-height: 14rem;
+            border: 2px dashed rgba(37, 99, 235, 0.42);
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(226,232,240,0.62));
+            color: #2563eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+            text-align: center;
+            font-weight: 900;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.55);
+        }
+        .soldagem-photo-slot span {
+            font-size: 0.95rem;
+            line-height: 1.1;
+        }
+        .soldagem-photo-slot small {
+            color: #64748b;
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
         .mockup-slot { width:min(100%,34rem); height:min(100%,28rem); min-height:18rem; border:2px dashed rgba(37,99,235,.38); border-radius:1.5rem; background:rgba(255,255,255,.55); box-shadow:0 22px 34px rgba(0,0,0,.08); }
         @media (max-width: 1024px) {
             body { font-size: 14px; }
@@ -647,7 +767,7 @@
         #extra-reference-carousel .model-carousel { padding-top: 0 !important; padding-bottom: 0 !important; }
         #extra-reference-carousel .relative.max-w-7xl { gap: 0 !important; }
     </style>
-    <script src="soldagem-template.js?v=carrosseis-esteira-1" defer></script>
+    <script src="soldagem-template.js?v=carrossel-bloco-isolado-1" defer></script>
 </head>
 <body style="background:#f6f9ff;" class="text-zinc-900 antialiased selection:bg-lime-500 selection:text-zinc-900 pb-0 overflow-x-hidden">
 <div class="bg-[#ef5b4d] text-white text-center py-2 px-2 sm:px-4 text-[11px] sm:text-sm font-bold text-balance">
