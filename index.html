@@ -632,7 +632,7 @@
             #extra-reference-carousel { padding-bottom: 0 !important; }
         #extra-reference-carousel .model-carousel { padding-bottom: 0 !important; }
     </style>
-    <script src="soldagem-template.js?v=mobile-espaco-mockup-1" defer></script>
+    <script src="soldagem-template.js?v=antes-depois-menor-1" defer></script>
 </head>
 <body style="background:#f6f9ff;" class="text-zinc-900 antialiased selection:bg-lime-500 selection:text-zinc-900 pb-0 overflow-x-hidden">
 <div class="bg-[#ef5b4d] text-white text-center py-2 px-2 sm:px-4 text-[11px] sm:text-sm font-bold text-balance">
@@ -787,11 +787,12 @@
 
         function setupAutoCarousel(carouselId, scrollSpeed = 1) {
             const carousel = document.getElementById(carouselId);
-            if (!carousel) return;
+            if (!carousel || carousel.dataset.soldagemReady === 'true') return;
             const originalItems = Array.from(carousel.children);
-            [...originalItems, ...originalItems].forEach(item => carousel.appendChild(item.cloneNode(true)));
+            originalItems.forEach(item => carousel.appendChild(item.cloneNode(true)));
             if (scrollSpeed < 0) carousel.scrollLeft = carousel.scrollWidth / 2;
             function scrollCarousel() {
+                if (!document.body.contains(carousel)) return;
                 carousel.scrollLeft += scrollSpeed;
                 if (carousel.scrollLeft >= carousel.scrollWidth / 2) carousel.scrollLeft = 0;
                 if (carousel.scrollLeft <= 0 && scrollSpeed < 0) carousel.scrollLeft = carousel.scrollWidth / 2;
@@ -800,9 +801,11 @@
             requestAnimationFrame(scrollCarousel);
         }
 
-        setupAutoCarousel('auto-carousel-top', 1);
-        setupAutoCarousel('auto-carousel-bottom', -1);
-        setupAutoCarousel('auto-carousel-extra-top', 1);
+        if (!document.querySelector('script[src*="soldagem-template.js"]')) {
+            setupAutoCarousel('auto-carousel-top', 1);
+            setupAutoCarousel('auto-carousel-bottom', -1);
+            setupAutoCarousel('auto-carousel-extra-top', 1);
+        }
 
         document.querySelectorAll('a[href="#oferta"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
